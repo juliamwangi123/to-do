@@ -1,0 +1,18 @@
+.display{
+    color:whitesmoke;
+}
+
+.display li{
+    list-style-type: none;
+    position: relative;
+    left: -20%;
+}
+
+.delete{
+    margin-left: 10px;
+}
+
+.mark {
+    text-decoration: line-through;
+    color: red;
+}

@@ -1,0 +1,14 @@
+    <form  (submit)= "addTodo()">
+        <input type="text" name="newItem"  class="newTask" [(ngModel)]="newItem">
+        <input type="submit" value="Add"  class="addbtn">
+    </form>
+    <div class="display">
+        <ul *ngFor="let item of todo; let i = index" class="done {{(item.status ? 'mark': '')}}">
+            <li  (click)= "addToggleDone(i)" > {{i}}. {{item.content}}       </li>
+            <button class="delete"
+            (click)="delete(i)"> x</button>            
+        </ul>
+    </div>
+
+
+ 
